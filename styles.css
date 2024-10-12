@@ -1,0 +1,288 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #F0E5D8; /* Light Sand */
+    color: #333;
+    line-height: 1.6;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #F0E5D8; /* Light Sand */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.navbar .logo h1 {
+    font-size: 22px;
+    color: #228B22; /* Forest Green */
+    font-weight: 700;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.navbar .nav-links li {
+    margin-left: 40px;
+}
+
+.navbar .nav-links a {
+    color: #333;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.navbar .nav-links a:hover {
+    color: #228B22; /* Forest Green */
+    transition: color 0.3s ease-in-out;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #F0E5D8; /* Light Sand */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding-top: 100px;
+}
+
+.hero-content {
+    text-align: center;
+    max-width: 800px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    font-weight: 700;
+    color: #333;
+    line-height: 1.2;
+}
+
+.hero p {
+    font-size: 20px;
+    color: #555;
+    margin: 20px 0;
+}
+
+.cta-button {
+    background-color: #228B22; /* Forest Green */
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 30px;
+}
+
+.cta-button:hover {
+    background-color: #196619;
+}
+
+/* About Us Section */
+.about-us {
+    background-color: #fff;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.about-us h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.about-us p {
+    font-size: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #555;
+}
+
+/* Find a Teacher Section */
+.find-teacher {
+    background-color: #F0E5D8;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.find-teacher h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.teacher-cards {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.teacher-card {
+    background-color: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    text-align: left;
+}
+
+.teacher-card h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.teacher-card p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Register Section */
+.register {
+    background-color: #fff;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.register h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.register p {
+    font-size: 20px;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+.register .cta-button {
+    background-color: #228B22; /* Forest Green */
+    color: white;
+    padding: 15px 30px;
+    border-radius: 30px;
+    font-size: 16px;
+}
+
+/* Footer */
+footer {
+    background-color: #F0E5D8;
+    color: #555;
+    text-align: center;
+    padding: 40px 20px;
+    font-size: 14px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* General Form Styles */
+form {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 8px;
+    text-align: left; /* Align labels to the left */
+}
+
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: border 0.3s ease;
+}
+
+textarea {
+    resize: none;
+    height: 100px; /* Match other input fields */
+    padding: 12px;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
+    border-color: #228B22;
+}
+
+/* Custom File Input */
+.custom-file-input {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+input[type="file"] {
+    position: absolute;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.custom-file-label {
+    display: block;
+    background-color: #f7f7f7;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 12px;
+    text-align: center;
+    font-size: 16px;
+    color: #555;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.custom-file-input:hover .custom-file-label {
+    background-color: #e0e0e0;
+}
+
+button.cta-button {
+    background-color: #228B22;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 30px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 20px;
+}
+
+button.cta-button:hover {
+    background-color: #196619;
+}
+
+/* Thank You Message */
+#thank-you-message {
+    text-align: center;
+    font-size: 18px;
+    color: #228B22;
+    margin-top: 40px;
+}
