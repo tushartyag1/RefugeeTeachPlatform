@@ -263,15 +263,16 @@ input[type="file"] {
     background-color: #e0e0e0;
 }
 
+/* CTA Button - Fix the elongated button */
 button.cta-button {
-    background-color: #228B22;
+    background-color: #228B22; /* Forest Green */
     color: white;
     border: none;
-    padding: 12px 20px;
+    padding: 12px 30px;  /* Ensure padding is set for a fixed size */
     font-size: 16px;
     border-radius: 30px;
     cursor: pointer;
-    width: 100%;
+    display: inline-block; /* Make it behave like a normal button */
     margin-top: 20px;
 }
 
@@ -282,7 +283,97 @@ button.cta-button:hover {
 /* Thank You Message */
 #thank-you-message {
     text-align: center;
-    font-size: 18px;
+    font-size: 16px;
     color: #228B22;
     margin-top: 40px;
+}
+
+/* General Teacher Card Styling */
+.teacher-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 30px; /* More spacing between the cards */
+    padding: 40px;
+}
+
+.teacher-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 20px; /* More rounded corners */
+    display: flex; /* Flexbox to align image and text side by side */
+    padding: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%; /* Make the card take up full width of its container */
+    max-width: 800px; /* Set a wider max width for the cards */
+    margin: 0 auto; /* Center the cards horizontally */
+}
+
+.teacher-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15); /* Make the shadow stronger on hover */
+}
+
+.teacher-image {
+    width: 230px; /* Increase the size of the image */
+    height: 230px; /* Keep the height proportional */
+    border-radius: 10%; /* Maintain the circular shape */
+    margin-right: 20px; /* Keep spacing between the image and text */
+    object-fit: cover; /* Ensure the image fills the circle without distortion */
+}
+
+.teacher-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 600px; /* Set a max width for text to keep it neat */
+}
+
+.teacher-info h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.teacher-info p {
+    margin: 5px 0;
+    color: #555;
+}
+
+.contact-button {
+    background-color: #228B22; /* Forest Green */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 30px;
+    margin-top: 10px;
+    width: auto; /* Ensure the width fits the text, making the button smaller */
+    display: inline-block; /* Prevents the button from expanding to full width */
+    transition: background-color 0.3s ease;
+}
+
+.contact-button:hover {
+    background-color: #196619;
+}
+
+/* Earth Image Styles */
+.earth-image-container {
+    text-align: center;
+    margin-top: 30px; /* Adjust margin for positioning */
+}
+
+.earth-image {
+    width: 200px; /* Size of the image */
+    height: 200px;
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover; /* Ensures the image covers the circular area */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Adds hover effect */
+}
+
+.earth-image:hover {
+    transform: scale(1.05); /* Slightly enlarges the image on hover */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15); /* Adds more shadow on hover */
 }
