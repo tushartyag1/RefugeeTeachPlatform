@@ -408,3 +408,31 @@ button.cta-button:hover {
     border-radius: 15px; /* Rounded corners */
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Subtle shadow for a cleaner look */
 }
+
+/* Refugee Camps Map Section */
+.refugee-map {
+    text-align: center;
+    padding: 40px;
+    background-color: #f9f9f9; /* Light background for better visibility */
+}
+
+.map-container {
+    max-width: 900px;
+    margin: 0 auto; /* Center the image and text */
+}
+
+.refugee-map-image {
+    width: 100%;
+    max-width: 900px;
+    height: auto; /* Maintain the aspect ratio */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin-bottom: 20px; /* Space between the image and caption */
+}
+
+.map-caption {
+    font-size: 18px;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 40px; /* Space below the caption */
+}
